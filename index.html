@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="danger-alert">
+            <span class="font-30">alarm is set</span>
+        </div>
+        <div class="main-container light-container">
+            <div id="background-control" class="right clock-background">
+                <div class="mode right"></div>
+            </div>
+            <span class="right">dark mode: <span id="mode-info">OFF</span></span>
+            <div class="heading">
+                <h1>clock 1.0</h1>
+            </div>
+            <div class="clock">
+                <h1 id="time">08:30:45</h1>
+                <h2 id="day">11th march 2021</h2>
+            </div>
+        </div>
+        <div class="alarm-control">
+            <div class="alarm-container">
+                <h1 class="font-40">set alarm</h1>
+                <div class="inline">
+                    <label>enter hour</label><br>
+                    <input type="text" class="center font-30" id="hours" value="00">
+                </div>
+                <div class="inline">
+                    <label>enter minute</label><br>
+                    <input type="text" class="center font-30" id="minutes" value="00">
+                </div>
+                <div class="inline">
+                    <label>enter seconds</label><br>
+                    <input type="text" class="center font-30" id="seconds" value="00">
+                </div>
+                <br><button id="set-alarm">set alarm</button>
+            </div>
+            <div id="show-alarm">
+                <span id="line1" class="font-30">|</span>
+                <span id="line2" class="font-30">|</span>
+            </div>
+            <div id="alarm-tone">
+                <h1 class="font-100" id="alarm-time">00:00:00</h1>
+                <button class="stop-song">OK</button>
+                <button id="repeat">repeat-5min</button>
+            </div>
+        </div>
+    </main>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
